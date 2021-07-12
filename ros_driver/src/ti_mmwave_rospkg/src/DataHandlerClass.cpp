@@ -1175,7 +1175,7 @@ void *DataUARTHandler::sortIncomingData( void )
                         RScanTrackStd->tracks[j].track_shape.points[3].y = -temp[0] - temp[4] / 2;
                         RScanTrackStd->tracks[j].track_shape.points[3].z = 0.0;
                         RScanTrackStd->tracks[j].linear_velocity.x = temp[3];
-                        RScanTrackStd->tracks[j].linear_velocity.y = temp[2];
+                        RScanTrackStd->tracks[j].linear_velocity.y = -temp[2];
                         RScanTrackStd->tracks[j].linear_velocity.z = 0.0;
 
                         j++;
